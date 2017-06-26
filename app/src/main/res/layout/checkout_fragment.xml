@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing Details"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_secondry_color"
+        android:id="@+id/billing_details"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/billing_details"
+        android:id="@+id/name_box">
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firstname"
+            android:layout_marginLeft="28dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/reg_design"
+            android:inputType="textCapSentences"
+            android:id="@+id/fname_box"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="185dp"
+            android:hint="Firstname"
+            android:paddingLeft="10dp"
+            android:textSize="13dp"
+            android:textColorHint="@color/ButtontextColor"
+            android:textStyle="italic"
+            android:fontFamily="casual"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lastname"
+            android:layout_marginLeft="200dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/reg_design"
+            android:inputType="textCapSentences"
+            android:id="@+id/lname_box"
+            android:layout_marginLeft="185dp"
+            android:layout_marginRight="20dp"
+            android:hint="Lastname"
+            android:textColor="@color/section_seperation_color"
+            android:paddingLeft="10dp"
+            android:textSize="13dp"
+            android:textColorHint="@color/ButtontextColor"
+            android:textStyle="italic"
+            android:fontFamily="casual"
+            />
+    </RelativeLayout>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Phone No"
+    android:layout_below="@id/name_box"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="5dp"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/reg_design"
+        android:inputType="number"
+        android:id="@+id/phone_box"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Phone Number"
+        android:textColor="@color/section_seperation_color"
+        android:paddingLeft="10dp"
+        android:textSize="13dp"
+        android:textColorHint="@color/ButtontextColor"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:layout_below="@id/name_box"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@id/phone_box"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/reg_design"
+        android:inputType="text"
+        android:id="@+id/address_box"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Address"
+        android:textColor="@color/section_seperation_color"
+        android:paddingLeft="10dp"
+        android:textSize="13dp"
+        android:textColorHint="@color/ButtontextColor"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:layout_below="@+id/phone_box"/>
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_below="@id/address_box"-->
+        <!--android:id="@+id/line"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp">-->
+
+
+    <!--</view>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_product"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/address_box"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/listview_product"
+    android:text="Place Order"
+    android:id="@+id/order"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#512DA8</color>
+    <color name="colorPrimaryDark">#82d1f5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_white">#e7e5e5</color>
+
+    <item name="primary_color" type="color">#512DA8</item>
+    <item name="secondry_color" type="color">#82d1f5</item>
+    <item name="background_color" type="color">#ea715b</item>
+    <item name="alternative_color" type="color">#544d4d</item>
+    <item name="color_primary" type="color">#3238a6</item>
+    <item name="section_seperation_color" type="color">#363232</item>
+    <item name="text_primary_color" type="color">#cccbcb</item>
+    <item name="text_secondry_color" type="color">#a6a5a5</item>
+    <color name="view" >#ffffff</color>
+
+
+
+    <color name="ButtontextColor">#ffffff</color>
+    <color name="ButtonColor">#1a7fa3</color>
+    <item name="secondary_text_color" type="color">#252424</item>
+    <item name="color_text_secondary" type="color">#909293</item>
+
+
+
+
+
+    <color name="heading_color">#161616</color>
+    <color name="text_color_1">#b7b7b7</color>
+    <color name="text_color_2">#fcfafa</color>
+
+</resources>

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/dialog_trans"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="#111111"
+        android:contentDescription="" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_rel_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/dialog_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/corners_pink"
+            android:paddingBottom="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+
+            <RelativeLayout
+                android:id="@+id/twitter_header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/dialog_done_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Send"
+                    android:textColor="@color/color_white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/dialog_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Cancel"
+                    android:textColor="@color/color_white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_signin_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/twitter_header_layout"
+                android:layout_marginLeft="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/activity_signin_email_icon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignTop="@+id/activity_signin_email"
+                    android:layout_marginTop="7dp"
+                    android:contentDescription="@null"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/activity_signin_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/activity_signin_email_icon"
+                    android:background="@mipmap/input_field"
+                    android:focusable="true"
+                    android:hint="View Cart"
+                    android:paddingLeft="12dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/color_text_secondary"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/activity_signin_email_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/activity_signin_email"
+                    android:layout_below="@+id/activity_signin_email"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/input_field" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

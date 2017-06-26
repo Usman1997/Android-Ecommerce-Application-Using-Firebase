@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/logo1" />
+
+    <RelativeLayout
+        android:id="@+id/name_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:orientation="horizontal">
+
+        />
+
+        <RelativeLayout
+            android:id="@+id/first_name_box"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/reg_fname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Firstname"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/view"
+                android:textSize="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/view"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/reg_fname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/view"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/last_name_box"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/first_name_box">
+
+            <EditText
+                android:id="@+id/reg_lname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Lastname"
+                android:inputType="textCapSentences"
+                android:paddingLeft="25dp"
+                android:textColorHint="@color/view"
+                android:textSize="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/view"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/reg_lname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/view">
+
+            </View>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_box">
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/view"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/view"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/reg_email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/view">
+
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_box">
+
+        <EditText
+            android:id="@+id/reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/view"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/view"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/reg_phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/view">
+
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_box">
+
+        <EditText
+            android:id="@+id/reg_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Address"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/view"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/view"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/reg_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/view">
+
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pass_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_box">
+
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/view"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/view"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/reg_pass"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/view">
+
+        </View>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pass_box"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/submit_button"
+        android:text="Register"
+        android:textColor="@color/view" />
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/home_viewpager"
+
+            >
+
+        </android.support.v4.view.ViewPager>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="3D Printers"
+                android:textColor="@color/heading_color" />
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/seatLegendLayout">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_gridtableLayout"
+                    android:layout_width="482dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gridView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:columnWidth="120dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="1dp"
+                        android:numColumns="4"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="horizontal"
+                        android:stretchMode="none"
+                        android:verticalSpacing="1dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false">
+
+                    </GridView>
+
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="Filaments"
+                android:textColor="@color/heading_color" />
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/seatLegendLayout">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_gridtableLayout1"
+                    android:layout_width="962dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gridView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:columnWidth="120dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="1dp"
+                        android:numColumns="8"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="horizontal"
+                        android:stretchMode="none"
+                        android:verticalSpacing="1dp">
+
+                    </GridView>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:text="Services We Offer"
+                android:textColor="@color/heading_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/printing_service_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/printing_service"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/printing_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/printing_service"
+                    android:layout_centerHorizontal="true"
+                    android:text="3D Printing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/printing_designing_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/printing_service_box">
+
+                <ImageView
+                    android:id="@+id/designing"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/designing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/designing"
+                    android:layout_centerHorizontal="true"
+                    android:text="3D Printing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/scanning_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/printing_designing_box"
+
+                >
+
+                <ImageView
+                    android:id="@+id/scanning"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/scanning" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scanning"
+                    android:layout_centerHorizontal="true"
+                    android:text="3D Printing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:id="@+id/printing_training_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp">
+
+                <ImageView
+                    android:id="@+id/training"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/training" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/training"
+                    android:layout_centerHorizontal="true"
+                    android:text="3D Printing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/reverse_engineering_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/printing_training_box">
+
+                <ImageView
+                    android:id="@+id/reverse_enginerring"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/reverse_engineering" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reverse_enginerring"
+                    android:layout_centerHorizontal="true"
+                    android:text="3D Printing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

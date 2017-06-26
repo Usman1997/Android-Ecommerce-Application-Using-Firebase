@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "115503032461",
+    "firebase_url": "https://visco-8ecc8.firebaseio.com",
+    "project_id": "visco-8ecc8",
+    "storage_bucket": "visco-8ecc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115503032461:android:7e5bddf63d9f7ae8",
+        "android_client_info": {
+          "package_name": "com.example.user.visco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115503032461-abha7kfa6p3sivdq0vhmrmue0921crao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.visco",
+            "certificate_hash": "cd1a868bbb8d9a4c4bef889bf0e33e8ec9cf3fc4"
+          }
+        },
+        {
+          "client_id": "115503032461-bn7gdeauor84irt8551f8nrh8rpsempp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtS8eLH84TAOsrwLb0f3xrdKZxR0MAgoY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115503032461-bn7gdeauor84irt8551f8nrh8rpsempp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

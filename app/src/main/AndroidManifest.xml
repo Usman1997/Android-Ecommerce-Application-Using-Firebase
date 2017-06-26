@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.visco">
+    <uses-feature android:name="android.hardware.camera2" android:required="true"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".Visco">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".ShowActivity">
+
+        </activity>
+
+        <activity android:name=".LanuncherActivity">
+
+        </activity>
+
+        <activity android:name=".ProfileActivity">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".ListActivity">
+
+
+        </activity>
+
+        <activity android:name=".DescriptionActivity">
+
+        </activity>
+
+        <activity android:name=".CartActivity">
+
+        </activity>
+        <activity
+
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+    </application>
+
+</manifest>

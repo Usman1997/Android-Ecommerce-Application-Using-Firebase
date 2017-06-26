@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/listview_image"
+        android:layout_margin="10dp"/>
+
+<View
+    android:layout_width="0.8dp"
+    android:layout_height="75dp"
+    android:layout_marginLeft="100dp"
+    android:background="@color/section_seperation_color">
+
+</View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="14dp"
+            android:id="@+id/listview_title"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"/>
+    <View
+        android:layout_width="0.8dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="250dp"
+        android:background="@color/section_seperation_color">
+
+    </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textSize="16dp"
+            android:id="@+id/listview_price"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
